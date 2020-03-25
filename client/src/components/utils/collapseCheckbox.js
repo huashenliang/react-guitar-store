@@ -85,18 +85,21 @@ class CollapseCheckbox extends Component {
         return (
             <div className="collapse_items_wrapper">
                 <List style={{borderBottom: '1px solid #dbdbdb'}}>
-                    <ListItem onClick={this.handleClick} style={{padding:'10px 23px 10px 0'}}>
+                    <ListItem onClick={this.handleClick} style={{padding:'10px 23px 10px 0', color: "#000000"}}>
                         <ListItemText
                             primary={this.props.title}
                             className="collapse_title"
                         />
                         {this.handleAngle()}
                     </ListItem>
+                    <div className="collapse_list">
                     <Collapse in={this.state.open} timeout="auto" unmountOnExit>
                         <List component="div" disablePadding>
                             {this.renderList()}
                         </List>
                     </Collapse>
+                    </div>
+                    
                 </List>
             </div>
         );
