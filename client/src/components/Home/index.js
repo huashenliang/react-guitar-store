@@ -5,6 +5,7 @@ import CardBlock from '../utils/card_block';
 
 import { connect } from 'react-redux';
 import { getProductsBySell, getProductsByArrival } from '../../actions/products_actions';
+import Fade from 'react-reveal/Fade';
 
 class Home extends Component {
 
@@ -15,6 +16,8 @@ class Home extends Component {
 
     render() {
         return (
+
+  
             <div>
                 <HomeSlider/>
                 <CardBlock

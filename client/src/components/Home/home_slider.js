@@ -1,6 +1,7 @@
 import React from 'react';
 import Slider from 'react-slick';
 import MyButton from '../utils/button';
+import Fade from 'react-reveal/Fade';
 
 const HomeSlider = (props) => {
 
@@ -33,6 +34,7 @@ const HomeSlider = (props) => {
     const generateSlides = () => (
         slides ?
             slides.map((item,i)=>(
+                <Fade bottom>
                 <div key={i}>
                     <div className="featured_image"
                         style={{
@@ -56,6 +58,7 @@ const HomeSlider = (props) => {
                         </div>
                     </div>
                 </div>
+                </Fade>
             ))
         :null
     )

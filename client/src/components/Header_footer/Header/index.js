@@ -3,6 +3,7 @@ import { Link, withRouter} from 'react-router-dom';
 
 import { connect } from 'react-redux';
 import { logoutUser } from '../../../actions/user_actions';
+import Fade from 'react-reveal/Fade';
 
 class Header extends Component {
 
@@ -113,6 +114,7 @@ class Header extends Component {
 
     render() {
         return (
+            <Fade bottom cascade>
             <header className="bck_b_light">
                 <div className="container">
                     <div className="left">
@@ -130,6 +132,7 @@ class Header extends Component {
                     </div>
                 </div>
             </header>
+            </Fade>
         );
     }
 }
