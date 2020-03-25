@@ -45,10 +45,13 @@ a {
     clear: both;
     margin-bottom: 50px;
     border-top: 5px solid #f5f5f5;
-    padding-top: 20px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+   
 }
 .load_more_container :hover{
     background-color:#aaaaaa;
+    transform: scale(1.2);
 }
 .load_more_container span {
     cursor: pointer;
@@ -58,6 +61,8 @@ a {
     padding: 1% 60px;
     display: table;
     margin: 0 auto;
+    transition: transform .5s ease;
+    border-radius: 40px;
 }
 
 .no_result {
@@ -110,14 +115,22 @@ input {
 }
 
 button {
-    cursor: pointer;
+    /* cursor: pointer; */
     text-transform: uppercase;
-    padding: 10px;
-    background: #e1ddc3;
+    padding: 2%;
+    background: white;
     margin-top: 10px;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
+    border-radius: 25px;
+    border: 2px solid black;
+    transition: transform .5s ease;
 }
+
+button:hover{
+    transform: scale(1.2);
+}
+
 
 .error_label {
     color: #F44336;
@@ -126,6 +139,7 @@ button {
 }
 
 textarea {
+ 
     width: 100%;
     height: 51px;
     font-size: 15px;
@@ -133,6 +147,7 @@ textarea {
     box-sizing: border-box;
     margin-top: 5px;
     border: 1px solid #d1d1d1;
+  
 }
 
 .form_devider {
@@ -192,6 +207,10 @@ select {
     /* background: #e1ddc3; */
     border: 2px solid white;
     margin-top: 10px;
+    transition: transform .5s ease;
+}
+.link_default   :hover{
+    transform: scale(1.1)
 }
 
 .card_link,
@@ -457,6 +476,13 @@ footer .business_nfo .nfo {
     margin-top: 10px;
 }
 
+.featured_container .featured_action .my_link {
+    transition: transform .5s ease;
+}
+
+.featured_container .featured_action .my_link :hover{
+    transform: scale(1.2);
+}
 /*============================
         FEATURED PROMOTION
 ==============================*/
@@ -495,7 +521,13 @@ footer .business_nfo .nfo {
     margin: 10px auto;
 }
 
+.home_promotion .my_link {
+    transition: transform .5s ease;
+}
 
+.home_promotion .my_link :hover{
+    transform: scale(1.2);
+}
 /*============================
         CARD BLOCK
 ==============================*/
@@ -648,13 +680,12 @@ footer .business_nfo .nfo {
     width: 80%;
 }
 
-.collapse_title span {
+.collapse_title span  {
     text-transform: uppercase;
     font-weight: 700;
 }
-.collapse_items_wrapper{
-   
-}
+
+
 .grid_btn {
     float: right;
     padding: 10px 10px;
@@ -801,45 +832,76 @@ footer .business_nfo .nfo {
 ===============================*/
 
 .register_login_container {
+    
     display: flex;
     border: 1px solid #999592;
-    border-top: 5px solid #999592;
+    /* border-top: 5px solid #999592; */
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin: 80px 0px 110px 0px;
-    padding: 30px;
+    /* padding: 30px; */
     min-height: 430px;
-}
 
+}
+.register_login_container .left{
+    padding-left: 20%;
+    color: black;
+}
+.register_login_container .right{
+    padding-right: 20%;
+}
 .register_login_container .left,
 .register_login_container .right {
     flex:1
 }
 
+.register_login_container .my_link .link_default{
+    border: 2px solid black; 
+    transition: transform .5s ease;
+    border-radius: 40px;
+}
+
+.register_login_container .my_link :hover{
+    transform: scale(1.1);
+    
+}
+ 
+
 .register_login_container h2 {
     margin: 20px 0px;
     text-transform: uppercase;
-    color: #686868;
+    color: black;
 }
 
 .register_login_container p{
     font-weight: 300;
     font-size: 16px;
     width: 90%;
+    color: black;
 }
 
+.register_login_container_2 .left{
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.register_login_container_2 .left h2 {
+    color: black;
+}
 /*=============================
          USER
 ===============================*/
 
 .user_container {
+   
+    padding: 5% 20% 0 20%;
     display:flex;
     margin-bottom: 50px;
     min-height: 700px;
+    color: black;
 }
 
 .user_container .user_left_nav {
-    border-right: 1px solid #f8f8f8; 
+    border-right: 1px solid #aaaaaa;  
 }
 
 .user_container .user_left_nav .links a {

@@ -103,7 +103,7 @@ class Login extends Component {
                             Please check your data
                         </div>
                     :null}
-                    <button onClick={(event)=> this.submitForm(event)}>
+                    <button onClick={(event)=> this.submitForm(event)} >
                         Log in
                     </button>
 
