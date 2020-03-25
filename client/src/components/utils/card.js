@@ -28,8 +28,8 @@ class Card extends Component {
                     <div className="action_container">
                         <div className="tags">
                             <div className="brand">{props.brand.name}</div>
-                            <div className="name">{props.name}</div>
-                            <div className="name">${props.price}</div>
+                            <div className="name"style={{color: '#aaaaaa'}}>{props.name}</div>
+                            <div className="name"style={{color: '#aaaaaa'}}>${props.price}</div>
                         </div>
                     
                     { props.grid ?

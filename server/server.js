@@ -188,6 +188,7 @@ app.get('/api/product/brands',(req,res)=>{
 //              USERS
 //=================================
 
+//admin has a role of 1
 app.get('/api/users/auth',auth,(req,res)=>{
         res.status(200).json({
             isAdmin: req.user.role === 0 ? false : true,

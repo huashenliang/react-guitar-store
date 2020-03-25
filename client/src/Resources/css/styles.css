@@ -391,7 +391,9 @@ header .log_out_link {
 /*============================
             FOOTER
 ==============================*/
-
+footer {
+   margin-top: 10%;
+}
 
 
 footer .logo {
@@ -399,13 +401,15 @@ footer .logo {
     font-family: 'Monoton', cursive;
     color: #ffffff;
     font-size: 40px;
-    padding: 11px 0px;
+    padding: 2% 0px;
     border-bottom: 1px solid #4d4d4d;
 }
 
 footer .wrapper {
     display: flex;
     color: #d2d2d2;
+    padding-bottom: 2%;
+    padding-top: 2%;
 }
 footer .left{
     padding-left: 10%;
@@ -628,6 +632,7 @@ footer .business_nfo .nfo {
 .card_item_wrapper.grid_bars .action_container {
     flex-grow: 1;
     border: 1px solid #e6e6e6;
+
 }
 
 .card_item_wrapper.grid_bars .description{
@@ -639,10 +644,12 @@ footer .business_nfo .nfo {
 .card_item_wrapper.grid_bars .tags{
     border-bottom: 0px;
     padding: 5px 20px;
+    background-color: black;
 }
 
 .card_item_wrapper.grid_bars .tags .brand {
     font-size: 21px;
+    
 }
 
 
@@ -653,6 +660,7 @@ footer .business_nfo .nfo {
 
 .card_item_wrapper.grid_bars .tags .price {
     float:right;
+    
 }
 
 .card_item_wrapper.grid_bars .actions {
@@ -924,6 +932,13 @@ footer .business_nfo .nfo {
     margin-top: 20px;
 }
 
+.user_container .user_nfo_panel .my_link .link_default{
+    border: 2px solid black;
+    border-radius: 40px;
+   
+}
+
+
 .user_container .user_nfo_panel h1 {
     margin: 0 0 20px 0;
     line-height: 32px;
@@ -945,7 +960,7 @@ footer .business_nfo .nfo {
     background: white;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #ebebeb;
+    border: 1px solid #aaaaaa;
 }
 
 .user_product_block .item {
@@ -1030,3 +1045,4 @@ footer .business_nfo .nfo {
     background-position: center center !important;
     border: 1px solid #eaeaea;
 }
+

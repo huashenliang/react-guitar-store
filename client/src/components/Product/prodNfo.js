@@ -42,7 +42,7 @@ const ProdNfo = (props) => {
 
     const showProdActions = (detail) => (
         <div className="product_actions">
-            <div className="price">$ { detail.price }</div>
+            <div className="price" style={{color: '#aaaaaa'}}>$ { detail.price }</div>
             <div className="cart">
                 <MyButton
                     type="add_to_cart_link"
@@ -56,7 +56,7 @@ const ProdNfo = (props) => {
 
     const showProdSpecifications = (detail) => (
         <div className="product_specifications">
-            <h2>Specs:</h2>
+            <h2 style={{color: '#aaaaaa'}}>Specs:</h2>
             <div>
                 <div className="item">
                     <strong>Frets:</strong> {detail.frets}
@@ -72,8 +72,8 @@ const ProdNfo = (props) => {
     const detail = props.detail;
     return (
         <div>
-            <h1>{detail.brand.name} {detail.name}</h1>
-            <p>
+            <h1 style={{color: '#aaaaaa'}}>{detail.brand.name} {detail.name}</h1>
+            <p  style={{color: '#aaaaaa'}}>
                 {detail.description}
             </p>
             { showProdTags(detail)}
