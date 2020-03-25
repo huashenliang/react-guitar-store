@@ -849,14 +849,17 @@ footer .business_nfo .nfo {
     margin: 80px 0px 110px 0px;
     /* padding: 30px; */
     min-height: 430px;
+    padding-top: 3%;
+    margin-left: 20%;
+    margin-right: 20%;
 
 }
 .register_login_container .left{
-    padding-left: 20%;
+    padding-left: 10%;
     color: black;
 }
 .register_login_container .right{
-    padding-right: 20%;
+    padding-right: 10%;
 }
 .register_login_container .left,
 .register_login_container .right {
