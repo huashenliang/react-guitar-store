@@ -7,6 +7,7 @@ import { addToCart } from '../../actions/user_actions';
 class Card extends Component {
 
     renderCardImage(images){
+        console.log(images);
         if(images.length > 0){
             return images[0].url
         } else {
@@ -33,7 +34,7 @@ class Card extends Component {
                         </div>
                     
                     { props.grid ?
-                        <div className="description">
+                        <div className="description" style={{color: '#aaaaaa'}}>
                             <p>
                                 {props.description}
                             </p>    
