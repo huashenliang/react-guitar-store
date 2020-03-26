@@ -28,8 +28,10 @@ const HomeSlider = (props) => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: false
+        arrows: false,
+        autoplaySpeed: 2000
     }
+
 
     const generateSlides = () => (
         slides ?
@@ -73,5 +75,7 @@ const HomeSlider = (props) => {
         </div>
     );
 };
+
+
 
 export default HomeSlider;
