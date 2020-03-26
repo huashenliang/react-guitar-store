@@ -12,7 +12,7 @@ services:
             - server
         networks:
             webappnetwork
-    api:
+    server:
         image: webapp-server
         restart: always
         ports:
