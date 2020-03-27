@@ -8,7 +8,7 @@ const cloudinary = require('cloudinary');
 const fs = require('fs');
 const http = require('http');
 const https = require('https');
-const hostname = 'tune-reactproject.com';
+const hostname = 'www.tune-reactproject.com';
 const httpPort = 80;
 const httpsPort = 443;
 
