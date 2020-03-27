@@ -10,7 +10,8 @@ const async = require('async');
 require('dotenv').config();
 
 mongoose.Promise = global.Promise;
-mongoose.connect(process.env.MONGODB_URI)
+// mongoose.connect(process.env.MONGODB_URI);
+mongoose.connect("mongodb://john:johnadmin1@ds227664.mlab.com:27664/heroku_dh5p9mrn");
 
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
