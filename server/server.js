@@ -5,30 +5,30 @@ const formidable = require('express-formidable');
 const cloudinary = require('cloudinary');
 
 //ssl
-const fs = require('fs');
-const http = require('http');
-const https = require('https');
-const hostname = 'www.tune-reactproject.com';
-const httpPort = 80;
-const httpsPort = 443;
+// const fs = require('fs');
+// const http = require('http');
+// const https = require('https');
+// const hostname = 'www.tune-reactproject.com';
+// const httpPort = 80;
+// const httpsPort = 443;
 
-const httpsOptions = {
-    key: fs.readFileSync('./ssl/68527f52da695b28.pem'),
-    cert: fs.readFileSync('.ssl/68527f52da695b28.crt'),
-    ca: fs.readFileSync('./ssl/gd_bundle-g2-g1.crt'),
-};
+// const httpsOptions = {
+//     key: fs.readFileSync('./ssl/68527f52da695b28.pem'),
+//     cert: fs.readFileSync('.ssl/68527f52da695b28.crt'),
+//     ca: fs.readFileSync('./ssl/gd_bundle-g2-g1.crt'),
+// };
 
 const app = express();
 
 //ssl
-const httpServer = http.createServer(app);
-const httpsServer = https.createServer(httpsOptions, app);
-app.use((req, res, next) => {
-    if(req.protocol === 'http'){
-        res.redirect(301, `https://${req.headers.host}${req.url}`);
-    }
-    next();
-});
+// const httpServer = http.createServer(app);
+// const httpsServer = https.createServer(httpsOptions, app);
+// app.use((req, res, next) => {
+//     if(req.protocol === 'http'){
+//         res.redirect(301, `https://${req.headers.host}${req.url}`);
+//     }
+//     next();
+// });
 
 const mongoose = require('mongoose');
 const async = require('async');
@@ -459,5 +459,5 @@ app.listen(port,()=>{
 })
 
 //ssl
-httpServer.listen(httpPort,hostname);
-httpServer.listen(httpsPort, hostname);
+// httpServer.listen(httpPort,hostname);
+// httpServer.listen(httpsPort, hostname);
