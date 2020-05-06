@@ -36,7 +36,8 @@ require('dotenv').config();
 
 mongoose.Promise = global.Promise;
 // mongoose.connect(process.env.MONGODB_URI);
-mongoose.connect("mongodb://john:johnadmin1@ds227664.mlab.com:27664/heroku_dh5p9mrn");
+mongoose.connect("mongodb://admin:admin1@ds163360.mlab.com:63360/heroku_z7td1f7p");
+// mongoose.connect("mongodb://john:johnadmin1@ds227664.mlab.com:27664/heroku_dh5p9mrn");
 
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
